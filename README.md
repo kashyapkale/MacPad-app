@@ -5,14 +5,6 @@
   <img src="https://img.shields.io/badge/typescript-5-3178c6?style=for-the-badge&logo=typescript" alt="TypeScript" />
 </p>
 
-<h1 align="center">
-  <br />
-  <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2390EE90'/%3E%3Ctext x='8' y='48' font-size='42' font-family='monospace' font-weight='bold' fill='%23006400'%3EM%2B%3C/text%3E%3C/svg%3E" width="80" alt="MacPad++ Logo" />
-  <br />
-  MacPad++
-  <br />
-</h1>
-
 <h3 align="center">A fast, lightweight Notepad++ clone for the web. No bloat. No accounts. No nonsense.</h3>
 
 <p align="center">
