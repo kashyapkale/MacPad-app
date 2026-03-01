@@ -349,32 +349,46 @@ html, body, #root {
   display: flex;
   overflow: hidden;
   position: relative;
+  background: #ffffff;
 }
 
 .editor-container {
   flex: 1;
   overflow: hidden;
   position: relative;
+  background: #ffffff;
 }
 
 .editor-container .cm-editor {
-  height: 100%;
+  height: 100% !important;
+  background: #ffffff !important;
 }
 
 .editor-container .cm-editor .cm-scroller {
   font-family: 'Consolas', 'Courier New', 'Liberation Mono', monospace;
   overflow: auto;
+  background: #ffffff !important;
+}
+
+.editor-container .cm-editor .cm-content {
+  background: #ffffff;
 }
 
 .editor-container .cm-editor .cm-gutters {
-  background: #e4e4e4;
+  background: #e4e4e4 !important;
   border-right: 1px solid #ccc;
+  min-height: 100% !important;
 }
 
 .editor-container .cm-editor .cm-lineNumbers .cm-gutterElement {
   color: #808080;
   font-size: 11px;
   padding: 0 8px 0 4px;
+}
+
+/* Extend gutter background full height via scroller pseudo-gradient */
+.editor-container .cm-editor .cm-scroller {
+  background: linear-gradient(to right, #e4e4e4 0px, #e4e4e4 38px, #ccc 38px, #ccc 39px, #ffffff 39px) !important;
 }
 
 .editor-container .cm-editor .cm-activeLine {
@@ -778,6 +792,14 @@ html, body, #root {
 .dark-theme .win-btn { color: #ccc; }
 .dark-theme .document-map { background: #2d2d2d; border-left-color: #555; }
 
+.dark-theme .editor-wrapper,
+.dark-theme .editor-container,
+.dark-theme .editor-container .cm-editor,
+.dark-theme .editor-container .cm-editor .cm-scroller,
+.dark-theme .editor-container .cm-editor .cm-content {
+  background: #282c34 !important;
+}
+
 .dark-theme .editor-container .cm-editor .cm-activeLine {
   background: #2a2d2e;
 }
@@ -787,8 +809,12 @@ html, body, #root {
 }
 
 .dark-theme .editor-container .cm-editor .cm-gutters {
-  background: #2d2d2d;
+  background: #2d2d2d !important;
   border-right-color: #444;
+}
+
+.dark-theme .editor-container .cm-editor .cm-scroller {
+  background: linear-gradient(to right, #2d2d2d 0px, #2d2d2d 38px, #444 38px, #444 39px, #282c34 39px) !important;
 }
 
 .dark-theme .editor-container .cm-editor .cm-lineNumbers .cm-gutterElement {
