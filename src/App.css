@@ -387,7 +387,6 @@ html, body, #root {
 .editor-container .cm-editor .cm-gutters {
   background: #e4e4e4 !important;
   border-right: 1px solid #ccc;
-  min-height: 100% !important;
 }
 
 .editor-container .cm-editor .cm-lineNumbers .cm-gutterElement {
