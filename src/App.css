@@ -63,6 +63,41 @@ html, body, #root {
 }
 
 /* ============================================================
+   GitHub Link Icon
+   ============================================================ */
+.github-link {
+  position: fixed;
+  top: 2px;
+  right: 6px;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  opacity: 0.45;
+  transition: opacity 0.2s ease;
+}
+
+.github-link:hover {
+  opacity: 0.85;
+}
+
+.github-link svg {
+  width: 20px;
+  height: 20px;
+  fill: #333;
+}
+
+.dark-theme .github-link svg {
+  fill: #aaa;
+}
+
+.dark-theme .github-link:hover svg {
+  fill: #ddd;
+}
+
+/* ============================================================
    Menu Bar
    ============================================================ */
 .menu-bar {
