@@ -346,22 +346,32 @@ html, body, #root {
    ============================================================ */
 .editor-wrapper {
   flex: 1;
-  display: flex;
   overflow: hidden;
   position: relative;
   background: #ffffff;
 }
 
 .editor-container {
-  flex: 1;
-  overflow: hidden;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: #ffffff;
+}
+
+/* react-codemirror wrapper div - must fill container */
+.editor-container > div {
+  height: 100% !important;
 }
 
 .editor-container .cm-editor {
   height: 100% !important;
   background: #ffffff !important;
+}
+
+.editor-container .cm-editor .cm-scroller {
+  overflow: auto !important;
 }
 
 .editor-container .cm-editor .cm-scroller {
