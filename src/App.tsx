@@ -116,7 +116,7 @@ export default function App() {
     >
       <div className="top-branding">
         <span className="branding-text">MacPad++</span>
-        <a
+<a
           className="github-link"
           href="https://github.com/kashyapkale/MacPad-app"
           target="_blank"

@@ -90,6 +90,11 @@ html, body, #root {
   color: #999;
 }
 
+.tool-btn.dark-mode-toggle svg {
+  width: 16px;
+  height: 16px;
+}
+
 .github-link {
   display: flex;
   align-items: center;
