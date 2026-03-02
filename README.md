@@ -8,7 +8,7 @@
 <h3 align="center">A fast, lightweight code editor inspired by the best. No bloat. No accounts. No nonsense.</h3>
 
 <p align="center">
-  <a href="https://macpad.app">Live App</a> &bull;
+  <a href="https://macpad.vercel.app">Live App</a> &bull;
   <a href="#getting-started">Getting Started</a> &bull;
   <a href="#features">Features</a> &bull;
   <a href="#roadmap">Roadmap</a>
