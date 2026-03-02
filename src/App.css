@@ -437,7 +437,7 @@ html, body, #root {
 }
 
 .editor-container .cm-editor .cm-content {
-  background: #ffffff;
+  background: transparent;
 }
 
 .editor-container .cm-editor .cm-gutters {
@@ -862,7 +862,7 @@ html, body, #root {
 .dark-theme .editor-container .cm-editor,
 .dark-theme .editor-container .cm-editor .cm-scroller,
 .dark-theme .editor-container .cm-editor .cm-content {
-  background: #282c34 !important;
+  background: transparent !important;
 }
 
 .dark-theme .editor-container .cm-editor .cm-activeLine {
