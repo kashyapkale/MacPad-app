@@ -1,6 +1,6 @@
 /* ============================================================
    MacPad++ - React Version Styles
-   Authentic Notepad++ look & feel
+   MacPad++ UI Theme
    ============================================================ */
 
 *, *::before, *::after {
@@ -26,15 +26,15 @@
   --win-btn-hover: #d5d5d5;
   --win-btn-border: #adadad;
 
-  --npp-toolbar-bg: #eef1f3;
-  --npp-toolbar-border: #d6d6d6;
-  --npp-tab-bg: #e8e8e8;
-  --npp-tab-active: #ffffff;
-  --npp-tab-hover: #d8e6f2;
-  --npp-tab-border: #b0b0b0;
-  --npp-tab-bar-bg: #d4d0c8;
-  --npp-status-bg: #eef1f3;
-  --npp-titlebar-bg: #3c3c3c;
+  --mp-toolbar-bg: #eef1f3;
+  --mp-toolbar-border: #d6d6d6;
+  --mp-tab-bg: #e8e8e8;
+  --mp-tab-active: #ffffff;
+  --mp-tab-hover: #d8e6f2;
+  --mp-tab-border: #b0b0b0;
+  --mp-tab-bar-bg: #d4d0c8;
+  --mp-status-bg: #eef1f3;
+  --mp-titlebar-bg: #3c3c3c;
 
   --menubar-height: 23px;
   --toolbar-height: 30px;
@@ -63,18 +63,39 @@ html, body, #root {
 }
 
 /* ============================================================
-   GitHub Link Icon
+   Top Branding + GitHub Link
    ============================================================ */
-.github-link {
+.top-branding {
   position: fixed;
   top: 2px;
-  right: 6px;
+  right: 16px;
   z-index: 1100;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 20px;
+  gap: 6px;
   height: 20px;
+}
+
+.branding-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 0.3px;
+  opacity: 0.6;
+  user-select: none;
+}
+
+.dark-theme .branding-text {
+  color: #999;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
   opacity: 0.45;
   transition: opacity 0.2s ease;
 }
@@ -84,8 +105,8 @@ html, body, #root {
 }
 
 .github-link svg {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   fill: #333;
 }
 
@@ -105,7 +126,7 @@ html, body, #root {
   align-items: stretch;
   height: var(--menubar-height);
   background: var(--win-menu-bg);
-  border-bottom: 1px solid var(--npp-toolbar-border);
+  border-bottom: 1px solid var(--mp-toolbar-border);
   flex-shrink: 0;
   position: relative;
   z-index: 1000;
@@ -192,8 +213,8 @@ html, body, #root {
   display: flex;
   align-items: center;
   height: var(--toolbar-height);
-  background: var(--npp-toolbar-bg);
-  border-bottom: 1px solid var(--npp-toolbar-border);
+  background: var(--mp-toolbar-bg);
+  border-bottom: 1px solid var(--mp-toolbar-border);
   padding: 0 4px;
   flex-shrink: 0;
   gap: 0;
@@ -237,7 +258,7 @@ html, body, #root {
 .tool-separator {
   width: 1px;
   height: 20px;
-  background: var(--npp-toolbar-border);
+  background: var(--mp-toolbar-border);
   margin: 0 3px;
   flex-shrink: 0;
 }
@@ -249,8 +270,8 @@ html, body, #root {
   display: flex;
   align-items: flex-end;
   height: var(--tabbar-height);
-  background: var(--npp-tab-bar-bg);
-  border-bottom: 1px solid var(--npp-tab-border);
+  background: var(--mp-tab-bar-bg);
+  border-bottom: 1px solid var(--mp-tab-border);
   flex-shrink: 0;
   overflow: hidden;
   padding-left: 2px;
@@ -274,8 +295,8 @@ html, body, #root {
   align-items: center;
   height: 24px;
   padding: 0 8px;
-  background: var(--npp-tab-bg);
-  border: 1px solid var(--npp-tab-border);
+  background: var(--mp-tab-bg);
+  border: 1px solid var(--mp-tab-border);
   border-bottom: none;
   margin-right: -1px;
   cursor: pointer;
@@ -288,12 +309,12 @@ html, body, #root {
 }
 
 .tab:hover {
-  background: var(--npp-tab-hover);
+  background: var(--mp-tab-hover);
 }
 
 .tab.active {
-  background: var(--npp-tab-active);
-  border-bottom: 1px solid var(--npp-tab-active);
+  background: var(--mp-tab-active);
+  border-bottom: 1px solid var(--mp-tab-active);
   z-index: 1;
   margin-bottom: -1px;
 }
@@ -479,15 +500,15 @@ html, body, #root {
   display: flex;
   align-items: center;
   height: var(--statusbar-height);
-  background: var(--npp-status-bg);
-  border-top: 1px solid var(--npp-toolbar-border);
+  background: var(--mp-status-bg);
+  border-top: 1px solid var(--mp-toolbar-border);
   flex-shrink: 0;
   overflow: hidden;
 }
 
 .status-section {
   padding: 0 10px;
-  border-right: 1px solid var(--npp-toolbar-border);
+  border-right: 1px solid var(--mp-toolbar-border);
   height: 100%;
   display: flex;
   align-items: center;
@@ -541,7 +562,7 @@ html, body, #root {
   align-items: center;
   justify-content: space-between;
   padding: 6px 8px;
-  background: var(--npp-titlebar-bg);
+  background: var(--mp-titlebar-bg);
   color: white;
   font-size: 12px;
   cursor: move;
@@ -796,14 +817,14 @@ html, body, #root {
    Dark Theme
    ============================================================ */
 .dark-theme {
-  --npp-toolbar-bg: #3c3c3c;
-  --npp-toolbar-border: #555;
-  --npp-tab-bar-bg: #2d2d2d;
-  --npp-tab-bg: #3c3c3c;
-  --npp-tab-active: #1e1e1e;
-  --npp-tab-hover: #4a4a4a;
-  --npp-tab-border: #555;
-  --npp-status-bg: #3c3c3c;
+  --mp-toolbar-bg: #3c3c3c;
+  --mp-toolbar-border: #555;
+  --mp-tab-bar-bg: #2d2d2d;
+  --mp-tab-bg: #3c3c3c;
+  --mp-tab-active: #1e1e1e;
+  --mp-tab-hover: #4a4a4a;
+  --mp-tab-border: #555;
+  --mp-status-bg: #3c3c3c;
   --win-menu-bg: #3c3c3c;
   --win-menu-hover: #094771;
   --win-text: #cccccc;

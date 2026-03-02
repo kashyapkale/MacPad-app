@@ -20,7 +20,7 @@ export default function AboutDialog() {
             </svg>
           </div>
           <h2>MacPad++ v1.0</h2>
-          <p>A faithful Notepad++ clone for the web &amp; macOS</p>
+          <p>A fast, lightweight code editor for the web &amp; macOS</p>
           <p className="about-sub">Built with React + CodeMirror &bull; Stores locally in your browser</p>
           <button className="download-link" onClick={() => alert('Mac App download coming soon!')}>
             Download Mac App (Coming Soon)

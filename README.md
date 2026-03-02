@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/typescript-5-3178c6?style=for-the-badge&logo=typescript" alt="TypeScript" />
 </p>
 
-<h3 align="center">A fast, lightweight Notepad++ clone for the web. No bloat. No accounts. No nonsense.</h3>
+<h3 align="center">A fast, lightweight code editor inspired by the best. No bloat. No accounts. No nonsense.</h3>
 
 <p align="center">
   <a href="https://macpad.app">Live App</a> &bull;
@@ -38,7 +38,7 @@ MacPad++ exists because we believe:
 - **Software doesn't need an account.** Open the page. Start typing. That's it. No sign-up. No trial. No "continue with Google."
 - **Lightweight is a feature, not a limitation.** The entire app is under 200KB of application code. It loads faster than most apps render their loading spinner.
 
-MacPad++ is a love letter to Notepad++ — rebuilt for the modern web with the same principles: speed, simplicity, and respect for the user.
+MacPad++ is inspired by the best text editors of the past — rebuilt for the modern web with the same principles: speed, simplicity, and respect for the user.
 
 ## Features
 
@@ -62,7 +62,7 @@ MacPad++ is a love letter to Notepad++ — rebuilt for the modern web with the s
 - **Auto-detect language** from file extension
 - **Tab rename** via right-click context menu
 
-### Notepad++ DNA
+### Editor DNA
 - **Authentic UI** — Windows-style menu bar, toolbar with classic icons, tab bar, status bar
 - **Keyboard shortcuts** — Ctrl+N, Ctrl+S, Ctrl+W, Ctrl+F, Ctrl+H, Ctrl+G, F3, and more
 - **Right-click context menus** on editor and tabs
